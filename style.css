@@ -1,0 +1,56 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+.nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: #f9f6f6;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Style for the header section */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details {
+    color: #162519;
+}
+
+.profile-details h1 {
+    font-size: 24px;
+    margin-bottom: 150px;
+}
+
+.profile-details p {
+    font-size: 18px;
+}
