@@ -1,0 +1,17 @@
+/* contactstyle.css */
+
+.contact-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.contact-icons img {
+    padding:50px;
+    width: 400px; /* Adjust the size of the icons as needed */
+    height: 200px;
+}
