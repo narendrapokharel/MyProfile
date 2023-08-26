@@ -1,17 +1,76 @@
-/* contactstyle.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-.contact-icons {
+.contact-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.contact-item img {
+    width: 48px;
+    height: 48px;
+}
+
+.contact-item p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+.intro {
     text-align: center;
     margin-top: 20px;
+    padding: 20px;
+    animation: fade-in 1s ease-in-out;
 }
 
-.contact-icons a {
-    display: inline-block;
-    margin: 0 50px;
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.contact-icons img {
-    padding:50px;
-    width: 400px; /* Adjust the size of the icons as needed */
-    height: 200px;
+.contact-item:nth-child(2) {
+    animation-delay: 1s; /* Delay the animation for the second item by 1s */
+}
+
+.contact-item:nth-child(3) {
+    animation-delay: 2s; /* Delay the animation for the third item by 2s */
+}
+
+.contact-item:nth-child(4) {
+    animation-delay: 3s; /* Delay the animation for the fourth item by 3s */
 }
